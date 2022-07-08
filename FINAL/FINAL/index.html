@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEATHER FORECAST APP</title>
+
+  <!-- bootstrap css file -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- link of fontawesome -->
+  <script src="https://kit.fontawesome.com/cddd77ce06.js" crossorigin="anonymous"></script>
+
+  <!-- font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- link of stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section class="mainheading">
+    WEATHER FORECAST APP
+  </section>
+
+  <section id="present-weather-details">
+    <div class="present-details">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-12 col-sm-12 col-md-3 date-container">
+            <div class="time" id="time">
+              <p><span class="am-pm" id="am-pm"></span></p>
+            </div>
+            <div class="date" id="date"></div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6">
+            <div class="container main-btn-class">
+              <div class="row">              
+                <div class="col-12">
+                  <button id="bbtnn1" class="main-button">CURRENT LOCATION</button>
+                </div>
+                <div class="col-12 location-logo">
+                  - -<i class="bi bi-geo-alt-fill" style="font-size: 25px;"></i>- -
+                </div>
+                <div class="col-12">
+                  <button id="bbtnn2" class="main-button">SEARCH LOCATION</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-3 sample-test-1">
+            <div class="place-container">
+              <div class="time-zone" id="time-zone"></div>
+              <div class="country" id="country"></div>
+            </div>
+          </div>
+          
+          <form class="weatherLocation" id="form">
+            <div class="loc-form">
+              <input placeholder="Enter location" type="text" style="border-radius: 50px; padding: 10px 15px 10px 15px;" />
+              <button><i class="bi bi-search"></i></button>
+            </div>
+          </form>
+
+          <div id="current-weather-items" class="col-10 col-sm-10 col-md-6 col-xl-4 m-auto mt-2 mt-md-5"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="future-forecast-section">
+    <div class="future-forecast">
+      <div id="current-temp"></div>
+      <div class="weather-forecast " id="weather-forecast"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
